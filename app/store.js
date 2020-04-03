@@ -8,8 +8,9 @@ let _state = {
   weather: [],
   /**@type {Todo[]}*/
   todos: [],
-  /**@type {Image[]}*/
-  images: [],
+  /**@type {Image}*/
+  // @ts-ignore
+  images: {},
   /**@type {Quote[]}*/
   quotes: []
 };
