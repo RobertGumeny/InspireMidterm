@@ -11,8 +11,9 @@ let _state = {
   /**@type {Image}*/
   // @ts-ignore
   images: {},
-  /**@type {Quote[]}*/
-  quotes: []
+  /**@type {Quote}*/
+  // @ts-ignore
+  quotes: {}
 };
 
 /** Collection of listeners to be called based on keyed state changes

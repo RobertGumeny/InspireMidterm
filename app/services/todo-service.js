@@ -15,7 +15,6 @@ class TodoService {
       let todos = res.data.data.map(rawTodoData => new Todo(rawTodoData));
       store.commit("todos", todos);
     });
-    //TODO Handle this response from the server
   }
 
   addTodoAsync(todo) {
