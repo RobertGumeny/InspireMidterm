@@ -1,7 +1,33 @@
-#todo-error {
-  color: red;
-  font-size: 2em;
-}
 body {
   background-size: cover;
 }
+.td-count {
+  font-size: small;
+}
+.todoCounter {
+  font-weight: bold;
+}
+.todo {
+  background-color: rgba(0, 16, 17, 0.2);
+}
+.weather {
+  color: #3aafb9;
+  background-color: rgba(0, 16, 17, 0.2);
+}
+.close {
+  margin-top: -4px;
+}
+.completed {
+  text-decoration: line-through;
+}
+.todo-list-item {
+  background-color: rgba(0, 16, 17, 0);
+  margin-top: -2px;
+  font-size: small;
+}
+.todo-item-complete {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+/* Custom Checkbox */

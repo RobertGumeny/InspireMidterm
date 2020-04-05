@@ -1,0 +1,16 @@
+<!-- old Todo display-->
+<label class="container">
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+</label>
+<div class="d-flex p-1">
+  <p>${this.description}</p>
+  <button onclick="app.todoController.removeTodo('${this._id}')">
+    X
+  </button>
+  <button onclick="app.todoController.toggleTodoStatus('${this._id}')">
+    T
+  </button>
+</div>
+
+<p>${this.completed}</p>

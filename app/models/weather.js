@@ -14,10 +14,10 @@ export default class Weather {
 
   get Template() {
     return /*html*/ `
-      <p>${this.city}</p>
-      <p>Kelvin: ${this.kelvin}</p>
-      <p>Fahrenheit: ${this.fahrenheit}</p>
-      <p>Celsius: ${this.celsius}</p>
+    <p>Kelvin: ${this.kelvin}</p>
+    <p>Fahrenheit: ${this.fahrenheit}</p>
+    <p>Celsius: ${this.celsius}</p>
+    <p class="weather-city">${this.city}</p>
       <p>${this.icon} , ${this.weather}</p>
     `;
   }
