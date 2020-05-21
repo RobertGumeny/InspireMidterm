@@ -3,7 +3,6 @@ import Greeting from "../models/greeting.js";
 
 class GreetingService {
   constructor() {
-    console.log("Greeting Service is linked!");
     this.getGreeting();
   }
   getGreeting() {

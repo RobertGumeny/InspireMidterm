@@ -5,7 +5,6 @@ export default class Quote {
   }
 
   get Template() {
-    // REVIEW Why isn't this working?
     return /*html*/ `
       <p>Quote: ${this.body}</p>
       <p>Author: ${this.author}</p>

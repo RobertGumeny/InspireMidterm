@@ -9,16 +9,16 @@ const todoApi = axios.create({
 
 class TodoService {
   getTodos() {
-    console.log("Getting the Todo List");
+
     todoApi.get().then(res => {
-      console.log(res.data.data);
+
       let todos = res.data.data.map(rawTodoData => new Todo(rawTodoData));
       store.commit("todos", todos);
     });
   }
 
   addTodoAsync(todo) {
-    console.log(todo);
+
     todoApi
       .post("", todo)
       .then(res => {
@@ -48,7 +48,7 @@ class TodoService {
     todoApi
       .delete(todoId)
       .then(res => {
-        console.log(res.data);
+
         this.getTodos();
       })
       .catch(err => console.error(err));

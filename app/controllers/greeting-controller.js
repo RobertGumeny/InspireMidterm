@@ -23,7 +23,7 @@ function currentTime() {
   min = updateTime(min);
   sec = updateTime(sec);
   document.getElementById("clock").innerText = hour + " : " + min + " : " + sec;
-  let t = setTimeout(function() {
+  let t = setTimeout(function () {
     currentTime();
   }, 1000);
 }
@@ -32,7 +32,6 @@ export default class GreetingController {
   constructor() {
     _drawGreeting();
     currentTime();
-    console.log("Greeting Controller is linked!");
     store.subscribe("greetings", _drawGreeting);
   }
 }
